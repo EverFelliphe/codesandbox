@@ -1,0 +1,166 @@
+#titulo{
+    font-size: 40px;
+    font-family: 'IBM Plex Mono';
+    color: #0D5FA6  ;
+    margin-left: 12%;
+    margin-bottom: 25px;
+}
+
+#seta_voltar{
+    color: #05B5DF;
+    width: 40px;
+    height: auto;
+}
+
+#voltar{
+    display:flex;
+    margin-left: 6%;
+    margin-bottom: 28px;
+    background-color: transparent;
+    border: transparent;
+}
+
+#paragrafo{
+    font-family: 'Inter';
+    font-size: 25px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 60px;
+}
+
+input{
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 0px 10px;
+    border: 3px solid #666666;
+}
+
+input[type=text]:focus {
+    border: 3px solid #05B5DF;
+    outline: none;
+    padding: 0px 10px;
+}
+
+#mensagem:focus{
+    border: 3px solid #05B5DF;
+    outline: none;
+    padding: 10px 10px;
+}
+
+#nome{
+    margin-left: 12%;
+    width: 35%;
+    padding: 8px 10px;
+}
+
+#email{
+    width: 35%;
+    margin-left: 3%;
+    padding: 8px 10px;
+}
+
+#telefone{
+    width: 35%;
+    margin-left: 12%;
+    margin-top: 40px;
+    padding: 8px 10px;
+}
+
+#cpf_cnpj{
+    width: 35%;
+    margin-left:3%;
+    margin-top: 40px;
+    padding: 8px 10px;
+}
+
+#assunto{
+    width: 73.5%;
+    margin-left: 12%;
+    margin-top: 40px;
+    padding: 8px 10px;
+}
+
+#mensagem{
+    border: 3px solid #666666;
+    width: 73.5%;
+    height: 250px;
+    margin-left: 12%;
+    margin-top: 40px;
+    margin-right: 12%;
+    border-radius: 15px;
+    padding: 10px 10px;
+}
+
+#enviar_formulario{
+    background-color: #05B5DF;
+    border-radius: 15px;
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-top: 40px;
+    margin-left: 73%;
+    border: transparent;
+    margin-bottom: 30px;
+}
+
+#enviar_formulario:hover{
+    border: 2px solid #05B5DF;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+#enviar_formulario:active{
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+#confirmar{
+    background-color: #05B5DF;
+    border-radius: 15px;
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#econfirmar:hover{
+    border: 2px solid #05B5DF;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+#confirmar:active{
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+#cancelar{
+    background-color: #FF4057;
+    border-radius: 15px;
+    font-family: 'IBM Plex Mono';
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+#cancelar:hover{
+    border: 2px solid #FF4057;
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+}
+
+#cancelar:active{
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.modal-body{
+    text-align: center;
+}
+
+#staticBackdropLabel{
+    font-family: 'IBM Plex Mono';
+    color: #0D5FA6;
+    font-weight: bold;
+}
+
+#texto_modal{
+    font-family: 'Inter';
+    font-size: 20px;
+}

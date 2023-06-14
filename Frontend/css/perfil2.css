@@ -1,0 +1,32 @@
+.custom-btn-outline-primary {
+    color: #02D8DA;
+    border-color: #02D8DA;
+    background-color: transparent;
+}
+.custom-btn-outline-primary:hover {
+    color: #fff;
+    background-color: #02D8DA;
+    border-color: #02D8DA;
+}
+.btn {
+   margin-top: 2%;
+}
+.text-center mt-5 {
+    margin-top: 50px;
+}
+.btn-outline-success {
+    color: #02D8DA;
+    border-color: #02D8DA;
+    background-color: transparent;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #02D8DA;
+    border-color: #02D8DA;
+}
+.form-group {
+    margin-top: 2%;
+}
+.label {
+    margin-bottom: 2%;
+}

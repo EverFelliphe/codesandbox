@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/login.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/login-dimensões.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="container d-flex justify-content-center align-items-center" style="margin-left: 33%; width: 400px;">
+    
+    <div class="relatorios3-container text-center p-4 rounded" >
+   
+      <img id="ipt-logo" src="https://yt3.googleusercontent.com/ytc/AGIKgqOeO0XyRc2uKNs_ZP_7fSno17HFjaGUuTXD3mWG=s176-c-k-c0x00ffffff-no-rj" alt="image" class="relatorios3-image img-fluid" style="width: 40%; height: auto;">
+      <h1 class="relatorios3-text">Bem vindo(a)!</h1>
+      <p class="relatorios3-text1 mb-4" style="font-size: 22px;"><strong>Faça login para continuar</strong></p>
+      <div class="error relatorios3-text" id="error"></div>
+      <div class="input-group" style=" width: 300px;">
+        <input type="text" id="usuario" placeholder="CPF/CNPJ" class="form-control icon-person-input relatorios3-textinput form-control mb-2" style="border-radius:16px; background-color: #d9d9d9">
+      </div>
+      <div class="input-group">
+        <input type="password" id="senha" placeholder="Senha" class="form-control icon-lock-input relatorios3-textinput1 form-control mb-1" style="border-radius:16px; background-color: #d9d9d9;">
+      </div>
+        <div class="text-right mb-3">
+            <a href="#" class="relatorios3-text4"></a>
+        </div>
+      <button id="botaoir" class="btn btn-primary" style="border-radius: 18px; border:transparent; width: 100px; font-size: 16px; font-family: sans-serif; background-color: #15b9bf; margin-top: 5%;">Acessar</button>
+    </div>
+    </div>
+
+    
+    <div class="social-buttons align-items-center" style="width: 400px;">
+      <p style="white-space: pre;">Contatos: 
+         
+      </p>
+      <div class="icon-button">
+      <a href="https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/5b67ab74c41c891c401f6f518950113e.jpg" class="social-button email" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+          <path class="cf-icon-svg" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+        </svg>
+        <button></button>
+      </a>
+       </div>
+      <div class="icon-button">
+      <a href="https://www.linkedin.com/school/iptsp/mycompany/" class="social-button linkedin" target="_blank">
+            <svg viewBox="0 -2 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <g id="Icons" stroke="none" stroke-width="1">
+                <g transform="translate(-702.000000, -265.000000)">
+                    <path d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z" id="LinkedIn">
+        </path>
+                </g>
+            </g>
+        </svg>
+        <button></button>
+      </a>
+      </div>
+
+      <div class="icon-button">
+        <a href="https://www.ipt.br/" class="social-button web" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 16 16" version="1.1" fill="currentColor" class="bi bi-globe2">
+                <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855-.143.268-.276.56-.395.872.705.157 1.472.257 2.282.287V1.077zM4.249 3.539c.142-.384.304-.744.481-1.078a6.7 6.7 0 0 1 .597-.933A7.01 7.01 0 0 0 3.051 3.05c.362.184.763.349 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9.124 9.124 0 0 1-1.565-.667A6.964 6.964 0 0 0 1.018 7.5h2.49zm1.4-2.741a12.344 12.344 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332zM8.5 5.09V7.5h2.99a12.342 12.342 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.612 13.612 0 0 1 7.5 10.91V8.5H4.51zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741H8.5zm-3.282 3.696c.12.312.252.604.395.872.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a6.696 6.696 0 0 1-.598-.933 8.853 8.853 0 0 1-.481-1.079 8.38 8.38 0 0 0-1.198.49 7.01 7.01 0 0 0 2.276 1.522zm-1.383-2.964A13.36 13.36 0 0 1 3.508 8.5h-2.49a6.963 6.963 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667zm6.728 2.964a7.009 7.009 0 0 0 2.275-1.521 8.376 8.376 0 0 0-1.197-.49 8.853 8.853 0 0 1-.481 1.078 6.688 6.688 0 0 1-.597.933zM8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855.143-.268.276-.56.395-.872A12.63 12.63 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.963 6.963 0 0 0 14.982 8.5h-2.49a13.36 13.36 0 0 1-.437 3.008zM14.982 7.5a6.963 6.963 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008h2.49zM11.27 2.461c.177.334.339.694.482 1.078a8.368 8.368 0 0 0 1.196-.49 7.01 7.01 0 0 0-2.275-1.52c.218.283.418.597.597.932zm-.488 1.343a7.765 7.765 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" id="instagram-[#167]">
+                </path>
+          </svg>
+          <button></button>
+      </a>  
+     </div> 
+      </div>         
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script src="./assets/js/login.js">
+    
+  </script>
+</body>
+</html>

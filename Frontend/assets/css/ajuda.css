@@ -1,0 +1,83 @@
+#seta_voltar{
+    color: #05B5DF;
+    width: 40px;
+    height: auto;
+}
+
+#titulo{
+    font-size: 40px;
+    font-family: 'IBM Plex Mono';
+    color: #0D5FA6  ;
+    margin-left: 12%;
+}
+
+div{
+    border: 1px solid #424242;
+    border-radius: 20px;
+    width: 60%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20%;
+    background-color: #B8B8B8;
+    backdrop-filter: blur(6px);
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+
+}
+
+div:hover {
+    border: 2px solid #727272;
+    transform: scale(1.05);
+    transition: transform 0.25s ease;
+}
+
+div:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+
+h5{
+    font-family: 'IBM Plex Mono';
+    font-size: 30px;
+    text-align: center;
+}
+
+h4{
+    font-family: 'IBM Plex Mono';
+    font-size: 25px;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-top: 1px solid #424242;
+    border-radius: 20px;
+}
+
+#comentario{
+    background-color: #FFFFFF;
+}
+
+#inserir_comentario{
+    border: 0px;
+}
+
+
+#adicionar{
+    width: 60px;
+    height: auto;
+}
+
+#adicionar_comentario{
+    width: 100%;
+    border: 1px solid #B8B8B8;
+    text-align: center;
+    background-color: transparent;
+    border: transparent;
+}
+
+#voltar{
+    display:flex;
+    margin-left: 6%;
+    margin-bottom: 28px;
+    background-color: transparent;
+    border: transparent;
+}

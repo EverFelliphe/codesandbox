@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajuda2</title>
+    <link rel="stylesheet" href="./assets/css/ajuda2.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link href="./assets/css/nav2.css" rel="stylesheet"> 
+
+</head>
+<body>
+    <nav class="navbar d-flex  bg-light navbar-light border-bottom border-black">
+        <div class="container ms-4 w-25 teste ">
+           <a href="#" class="navbar-brand ">
+            <img src="./Referências/ipt_logo.svg" alt="Logo do IPT" width="80" height="68" style="margin-top: -20px;">
+           </a>
+           </div>
+           <div id="menuToggle" class="buton w-25" >
+            <input id="checkbox" type="checkbox" >    
+            <label class="toggle" for="checkbox">
+              <div class="bar bar--top"></div>
+              <div class="bar bar--middle"></div>
+              <div class="bar bar--bottom"></div>
+            </label>
+          </div>
+          <div class="container barra bar-close">
+            
+            <ul class="content content-close">
+                <li class="nav-item">
+                    <a href="/pagina_inicial.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">MEUS PROJETOS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/perfil2.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">MEU PERFIL</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">COMPARAR</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/salvos1.html" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">FAVORITOS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">SUPORTE</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/projeto.html?id_relatorio=1" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">PROJETO ATUAL</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">ESCRITÓRIO DE DADOS</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/relatorio-pdf.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">RELATÓRIOS</a>
+                </li>
+      
+      
+      
+      
+      
+      
+      
+  
+  
+  
+            </ul>
+           </div>
+      </nav>  
+    <main>
+        <button id="voltar">
+            <svg id="seta_voltar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path
+                    d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+            </svg>
+        </button>
+        
+        <h1 id="titulo"> COMO PODEMOS TE AJUDAR?</h1>
+        
+        <p id = "paragrafo">Envie sua mensagem por meio do formulário abaixo que nosso time entrará em contato o mais rápido possível. Não se esqueça dos itens obrigatórios (*).</p>
+        
+        <input type="text" id="nome" required placeholder="Nome *">
+        <input type="text" id="email" required placeholder="E-mail *">
+        <input type="text" id="telefone" required placeholder="Telefone *">
+        <input type="text" id="cpf_cnpj" required placeholder="CPF / CNPJ">
+        <input type="text" id="assunto" required placeholder="Assunto *">
+        <textarea type="text" id="mensagem" required placeholder="Mensagem *"></textarea>
+
+        <button id="enviar_formulario" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Enviar Formulário</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">CONFIRMAÇÃO DE ENVIO DE FORMULÁRIO</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="texto_modal">
+                    Ao clicar em confirmar, você não poderá mais editar o formulário, que será encaminhado para a nossa equipe.
+                    <br>
+                    Deseja confirmar o envio do formulário?
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="cancelar">Cancelar envio</button>
+                <button type="button" class="btn btn-primary" id="confirmar">Confirmar envio</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
+    <script src="./assets/js/navbar.js"></script>
+</body>
+</html>

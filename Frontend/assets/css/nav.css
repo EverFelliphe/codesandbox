@@ -1,0 +1,312 @@
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  transition: background 0.2s linear;
+}
+.navbar {
+  background-color: #f5f5f5;
+  display: flex;
+  border-bottom: 1px solid;
+  border-color: #333;
+  transition: background 0.2s linear;
+}
+.btn {
+  background-color: rgb(18, 124, 181);
+  border-radius: 50px;
+  border-color: transparent;
+  color: #f5f5f5;
+  transition: background 0.2s linear;
+}
+.btn:hover {
+  background-color: #02d8da;
+}
+.barra{
+
+  position: absolute;
+  display: none;
+  right: 3rem;
+
+  background-color: #0D5FA6;
+  border-radius: 24px;
+  top: 15px;
+  width: 0%;
+  height: 0%;
+
+  align-items: start ;
+  justify-content: start;
+  margin-right: -1px;
+  overflow: hidden;
+  z-index: 2;
+
+  transition: background 0.2s linear;
+}
+
+#menuToggle{
+  width: 5px;
+  display: flex;
+  justify-content: end ;
+  
+}
+li{
+  margin-top: 20px;
+  display: flex;
+  align-content: start;
+  justify-content: start;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.butaun{
+  border: none;
+  margin-right: 55px;
+  z-index: 1;
+}
+.butaun:active{
+  border: none;
+}
+.navbar-toggler:focus-visible{
+  background-color: antiquewhite;
+  border: none !important;
+
+}
+
+
+
+.toggle {  
+  top: 1px; 
+  left: -4rem;
+  position: relative;
+  width: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: calc(4px * 3 + 11px * 2);
+}
+
+.bar {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  height: 4px;
+  width: 100%;
+  border-radius: calc(4px / 2);
+  background: #031423;
+  color: inherit;
+  opacity: 1;
+  transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+}
+
+/***** Tornado Animation *****/
+
+.bar--top {
+  bottom: calc(50% + 11px + 4px/ 2);
+  transition-property: bottom,transform;
+  transition-delay: calc(0s + 0.35s) * .6;
+}
+
+.bar--middle {
+  top: calc(50% - 4px/ 2);
+  transition-property: opacity,transform;
+  transition-delay: calc(0s + 0.35s * .3);
+}
+#checkbox{
+display: none;
+
+
+ 
+}
+.bar--bottom {
+  top: calc(50% + 11px + 4px/ 2);
+  transition-property: top,transform;
+  transition-delay: 0s;
+}
+
+#checkbox:checked + .toggle .bar--top {
+  transform: rotate(-135deg);
+  background: #ffffff;
+  top:25px;
+  width: 75%;
+  transition-delay: calc(0s + 1 * .6);
+
+
+  bottom: calc(50% - 4px/ 2);
+}
+
+#checkbox:checked + .toggle .bar--middle {
+  
+
+  opacity: 0;
+  width: 75%;
+  background: #ffffff;
+
+  transform: rotate(-135deg);
+  transition-delay: calc(0s + 0.35s * .3);
+}
+
+#checkbox:checked + .toggle .bar--bottom {
+  top: calc(50% - 4px/ 2);
+  background: #ffffff;
+  top:25px;
+  width: 75%;
+
+  transform: rotate(-225deg);
+  transition-delay: calc(0s + 1s * .6);
+}
+.bar-open{
+  
+  position: absolute;
+  animation-name: teste;
+  animation-duration: 3s;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  width: 220px;
+  height: 470px;
+}
+
+
+
+
+.navbar-toggler{
+  display: flex;
+}
+
+.content-open{
+  
+animation-name:tt;
+animation-duration: 10s;
+
+
+}.content-close{
+  display: none;
+
+
+}
+#checkbox{
+  margin-left: 111px;
+}
+.barra .nav-item:hover{
+  width: 100%;
+  background-color: rgb(7, 39, 66);
+  border-radius: 4px;
+  color: black;
+  
+  
+}
+
+.barra a:hover{
+  margin-left: 3px;
+}
+.barra ul {
+  margin-top: 30px;
+}
+
+
+@keyframes teste {
+    0%   {display: block ; width: 0%; height:55px ;position: absolute;}
+    25%{display: block ; width: 220px; height:55px ;position: absolute;}
+    
+    100%  {display: block ; width: 220px; height:470px ;position: absolute;
+    }
+   
+  }
+@keyframes tt {
+    0%   {display: none ;position: absolute;}
+    25%{display: none ; position: absolute;}
+    50%  {display: none ;position: absolute; }
+    75%{display: none ;position: absolute;z-index: 0;}
+    99%{display: none ; position: absolute;}
+    100%  {display: block ; position: absolute;
+    }
+   
+  }
+
+
+  
+/***** Dark Mode *****/
+body.dark {
+  background-color: #02123B;
+  color: #f5f5f5;
+  transition: background 0.2s linear;
+ }
+ body.dark .barra {
+  background-color: #031423;
+  transition: background 0.2s linear;
+ }
+ body.dark .label {
+  background-color: #0D5FA6;
+  transition: background 0.2s linear;
+ }
+ body.dark .navbar {
+  background-color: #02123B;
+  border-color: #f5f5f5;
+  transition: background 0.2s linear;
+ }
+ body.dark .logo {
+  filter: invert(100%);
+ }
+ body.dark .btn {
+  background-color: #031423;
+ }
+ body.dark .btn:hover {
+  background-color: #02d8da;
+}
+ body.dark .bar--bottom {
+  color: #f5f5f5;
+ }
+ body.dark .bar--middle {
+  color: #f5f5f5;
+ }
+ body.dark .bar--top {
+  color: #f5f5f5;
+ }
+/***** Botão Dark Mode *****/
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #031423;
+  border-radius: 50px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+
+  transform: scale(1.5);
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+
+  height: 22px;
+  width: 22px;
+
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: #fafafa
+}
+
+.fa-sun {
+  color: #fafafa
+}
+
+
