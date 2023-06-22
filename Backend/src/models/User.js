@@ -3,9 +3,9 @@ const sqlite3 = require('sqlite3').verbose()
 var DBPATH = resolve(__dirname,'..','database','banco_de_dados_ipt_grupo02.db');
 //classe que se comunica com o banco de dados a tabela user
 
-class User{
+class User{ // classe que se comunica com o banco de dados da tabela user
 
-    findAll(){
+    findAll(){ // mostra todos os usuários
         return new Promise((resolve,reject)=>{
             var db = new sqlite3.Database(DBPATH);
             db.all(`SELECT * FROM user`, [], (err, rows)=>
@@ -20,7 +20,7 @@ class User{
         })
 
     }
-    showUser(id){
+    showUser(id){ // mostra um usuário
         return new Promise((resolve,reject)=>{
             var sql = `SELECT * FROM user WHERE id="${id}"`
             var db = new sqlite3.Database(DBPATH);
@@ -39,7 +39,7 @@ class User{
         })
         
     }
-    store(dados){
+    store(dados){ // cria um usuário
         return new Promise((resolve,reject)=>{
             var sql = `INSERT INTO user (usuario,senha,empresa,email) VALUES ("${dados.usuario}",${dados.senha},"${dados.empresa}","${dados.email}")`
             var db = new sqlite3.Database(DBPATH);
@@ -55,7 +55,7 @@ class User{
             db.close()
                 })
     }
-    updateUser(user){
+    updateUser(user){ // atualiza um usuário
         return new Promise((resolve,reject)=>{
             var sql = `UPDATE user SET usuario="${usuario}", senha="${user.senha}",empresa="${user.empresa}",email="${user.email}" WHERE id=${user.id}`
             var db = new sqlite3.Database(DBPATH);
@@ -71,7 +71,7 @@ class User{
             db.close()
         })
     }
-    deleteUser(id){
+    deleteUser(id){ // deleta um usuário
         return new Promise((resolve,reject)=>{
             var sql = `DELETE FROM user WHERE id=${id}`
             var db = new sqlite3.Database(DBPATH)

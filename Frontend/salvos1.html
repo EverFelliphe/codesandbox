@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Salvos 4</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/salvos1.css">
+    <link rel="stylesheet" type="text/css" href="./assets//css/salvos1.css">
    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link href="./assets/css/nav2.css" rel="stylesheet"> 
@@ -19,72 +19,91 @@
     }
   </style>
 <body>
-  <nav class="navbar d-flex  bg-light navbar-light border-bottom border-black">
-    <div class="container ms-4 w-25 teste ">
-       <a href="#" class="navbar-brand ">
-        <img src="./Referências/ipt_logo.svg" alt="Logo do IPT" width="80" height="68" style="margin-top: -20px;">
-       </a>
-       </div>
-       <div id="menuToggle" class="buton w-25" >
-        <input id="checkbox" type="checkbox" >    
-        <label class="toggle" for="checkbox">
-          <div class="bar bar--top"></div>
-          <div class="bar bar--middle"></div>
-          <div class="bar bar--bottom"></div>
-        </label>
-      </div>
-      <div class="container barra bar-close">
-        
-        <ul class="content content-close">
-          <li class="nav-item">
-            <a href="/pagina_inicial.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">MEUS PROJETOS</a>
+  <nav class="navbar">
+    <div class="container ms-4 w-25 teste">
+      <a href="#" class="navbar-brand">
+        <img class="logo" src="./Referências/ipt_logo.svg" alt="Logo do IPT" width="80" height="68"
+          style="margin-top: -20px;">
+      </a>
+    </div>
+    <div id="menuToggle" class="buton w-25">
+      <input id="checkbox" type="checkbox">
+      <label class="toggle" for="checkbox">
+        <div class="bar bar--top"></div>
+        <div class="bar bar--middle"></div>
+        <div class="bar bar--bottom"></div>
+      </label>
+    </div>
+    <div class="container barra bar-close">
+
+      <ul class="content content-close">
+        <li class="nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-kanban-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+          </svg>
+          <a href="/pagina_inicial.html?user_id=3" class="nav-link ibm ms-1 pag-inicial"
+            style="font-size: 18px; font-weight: 200; fill: currentColor;">MEUS PROJETOS</a>
         </li>
         <li class="nav-item">
-          <a href="/perfil2.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">MEU PERFIL</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill"
+            viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+          </svg>
+          <a href="/perfil2.html?user_id=3" class="nav-link ibm ms-1 pag-perfil"
+            style="font-size: 18px; font-weight: 200; fill: currentColor;">MEU PERFIL</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">COMPARAR</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+            class="bi bi-diagram-2-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-3 8A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1z" />
+          </svg>
+          <a href="#" class="nav-link ibm pag-comp" style="font-size: 18px; font-weight: 200; fill: currentColor;">COMPARAR</a>
         </li>
         <li class="nav-item">
-            <a href="/salvos1.html" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">FAVORITOS</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+          </svg>
+          <a href="/salvos1.html" class="nav-link ibm ms-1 pag-salvos"
+            style="font-size: 18px; font-weight: 200; fill: currentColor;">FAVORITOS</a>
         </li>
         <li class="nav-item">
-          <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">SUPORTE</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+            class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+            <path
+              d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+          </svg>
+          <a href="#" class="nav-link ibm ms-1 pag-ajuda"
+            style="font-size: 18px; font-weight: 200; fill: currentColor;">SUPORTE</a>
         </li>
-        <li class="nav-item">
-          <a href="/projeto.html?id_relatorio=1" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">PROJETO ATUAL</a>
+        <li>
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
+          <script src="./assets/js/script.js"></script>
+          <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
         </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">ESCRITÓRIO DE DADOS</a>
-        </li>
-        <li class="nav-item">
-          <a href="/relatorio-pdf.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">RELATÓRIOS</a>
-        </li>
-
-
-
-
-
-
-
-
-
-
-        </ul>
-       </div>
-  </nav>  
-    <div class="star-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
-        <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z"/>
-      </svg>
-      </div>
+      </ul>
+    </div>
+  </nav>
+    
 
     <div class="left-arroy">
-        <button>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" color= "red" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+      <a href=""class="back"><button >
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="#15B9BF" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
           </svg>
-          </button>
+          </button></a>
+        
       </div>
 
     <div class="main-title">
@@ -93,25 +112,20 @@
                 <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                 <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
               </svg>
-              <div class="info-tooltip" id="info-tooltip-id">
-                <p>Na aba de favoritos, você pode salvar e organizar seus itens preferidos.<br> Basta clicar no botão de favoritar e pronto! É como ter uma lista personalizada ao seu alcance.</p>
-              </div>
+             
         </div>
         <h3 class="favorite-title mx-3">FAVORITOS</h3>
       </div>
 
     <div class="input-group newinput">
         <div class="dropdown" >
-          <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="border: 1.5px solid;" id="btn-id">
+          <a class="btn btn-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" style="border: 1.5px solid; color: white;" id="btn-id">
             Pesquisar Pasta
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">GRÁFICOS SALVOS</a></li>
             <li><a class="dropdown-item" href="#">VIAGENS SALVAS</a></li>
-            <li><a class="dropdown-item" href="#">PASTA 1</a></li>
-            <li><a class="dropdown-item" href="#">PASTA 2</a></li>
-            <li><a class="dropdown-item" href="#">PASTA 3</a></li>
-            <li><a class="dropdown-item" href="#">PASTA 4</a></li>
+            
           </ul>
         </div>
       </div>  
@@ -119,105 +133,32 @@
     <div class="container">
         <div class="row">
           <div class="grid-container">
-            <div class="grid-item">
-              <div class="col">
-                <div class="card" id="card-id">
-                  <img src="./Referências/imagem4.png" alt="imagem">
-                  <div class="card-body">
-                    <h5 class="card-title">GRÁFICOS SALVOS</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="col">
-                <div class="card" id="card-id">
-                  <img src="./Referências/imagem3.png" alt="imagem">
-                  <div class="card-body">
-                    <h5 class="card-title">VIAGENS SALVAS</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid-item">
-              <div class="col">
-                <div class="card" id="card-id">
-                  <img src="./Referências/imagem.png" alt="imagem">
-                  <div class="card-body">
-                    <h5 class="card-title">PASTA 1</h5>
-                  </div>
-                </div>
-              </div>
-            </div>  
-            <div class="grid-item">
-              <div class="col">
-                <div class="card" id="card-id">
-                  <img src="./Referências/imagem4.png" alt="imagem">
-                  <div class="card-body">
-                    <h5 class="card-title">PASTA 2</h5>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="grid-item">
-              <div class="col">
-                <div class="card" id="card-id">
-                  <img src="./Referências/imagem3.png" alt="imagem">
-                  <div class="card-body">
-                    <h5 class="card-title">PASTA 3</h5>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="grid-item">
-              <div class="col">
-                <div class="card" id="card-id">
-                  <img src="./Referências/imagem.png" alt="imagem">
-                  <div class="card-body">
-                    <h5 class="card-title">PASTA 4</h5>
-                  </div>
-                </div>
-              </div>
-            </div> 
-            <div class="grid-item">
-              <div class="col" >
-                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: transparent; border-color: transparent;">   
-                  <div class="card-more" id="card-more-id">
-                      <div class="card-body">
-                          <p>+</p>
-                        <h5 class="card-title">Criar nova pasta</h5>
-                      </div>
-                    </div>
-                </button>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h1 class="modal-title " id="exampleModalLabel">Criar Pasta</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                      </div>
-                      <div class="modal-body">
-                        <p>Nome da pasta que você deseja criar:</p>
-                        <input class="past-creat-input" placeholder=' Como "Viagens impotantes" ou "Dados para analisar depois"' type="text">
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary" style="background-color: #15b9bf;">Criar Pasta</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                </div>
-                <div class="grid-item">          
-               </div>
-              </div>
-            </div>
+            
           </div>           
       </div>
-    
+      <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-end align-items-end w-100">
+
+        <!-- Then put toasts within -->
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img src="..." class="rounded me-2" alt="...">
+            <strong class="me-auto">Bootstrap</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+            Hello, world! This is a toast message.
+          </div>
+        </div>
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./assets/js/salvos.js"></script>
 
-
+      <script>
+        $('.back').click(function(){
+          window.location.href = '/pagina_inicial.html?user_id=3'
+        })
+      </script>
     <script src="./assets/js/navbar.js"></script>
   </body>

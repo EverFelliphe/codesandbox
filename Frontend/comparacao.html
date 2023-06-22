@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/comparacao.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Comparação</title>
+</head>
+<body>
+    <div class="left-arroy">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" color= "red" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>
+        </button>
+      </div>
+
+    <div class="main-title">
+          <div class="info-button" >
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="yellow" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                </svg>
+                </div>
+          <div class="info-tooltip" id="info-tooltip-id">
+                <p>Comparação é uma ferramenta poderosa para visualizar os dados do projeto. <br>
+                  Basta selecionar as viagens e os parâmetros que você deseja que o sistema <br>irá criar
+                  uma tabela personalizada para facilitar a comparação dos valores.
+                </p>
+            </div>
+        </div>
+          <h3 class="favorite-title mx-3">COMPARAÇÃO</h3>
+      </div>
+      
+      <div class="viagens ">
+        <p>Selecione os projetos que você deseja comparar:</p>
+        <div class="projeto" id="projeto1">
+          <div class="checkbox-container">
+            <input type="checkbox" id="checkbox01">
+            <label for="checkbox01" style="margin-top: -10px;">PROJETO 1</label>
+          </div>
+          <div class="viagens-container grid-container">
+            <!-- O id de cada checkbox e viagem é o nome "checkbox" ou "viagem" + 
+            o número do projeto + o número da viagem, ou seja viagem03-15 é a viagem
+            15 do projeto 3-->
+            <label for="checkbox01-01" class="viagem grid-item" id="viagem01-01">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-01"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 1</p>
+            </label>
+            <label for="checkbox01-02" class="viagem grid-item" id="viagem01-02">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox01-02"></div>
+                  <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 2</p>
+            </label>
+            <label for="checkbox01-03" class="viagem grid-item" id="viagem01-03">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-03"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 3</p>
+            </label>
+            <label for="checkbox01-04" class="viagem grid-item" id="viagem01-04">
+                <div class="checkbox-container">
+                  <input type="checkbox" id="checkbox01-04"></div>
+                  <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 4</p>
+            </label>
+            <label for="checkbox01-05" class="viagem grid-item" id="viagem01-05">
+                  <div class="checkbox-container">
+                    <input type="checkbox" id="checkbox01-05"></div>
+                    <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 5</p>
+            </label>
+            <label for="checkbox01-06" class="viagem grid-item" id="viagem01-06">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-06"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 6</p>
+            </label>
+            <label for="checkbox01-07" class="viagem grid-item" id="viagem01-07">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-07"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 7</p>
+            </label>
+            <label for="checkbox01-08" class="viagem grid-item" id="viagem01-08">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-08"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 8</p>
+            </label>
+            <label for="checkbox01-09" class="viagem grid-item" id="viagem01-09">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-09"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 9</p>
+            </label>
+            <label for="checkbox01-10" class="viagem grid-item" id="viagem01-10">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-10"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 10</p>
+            </label>
+            <label for="checkbox01-11" class="viagem grid-item" id="viagem01-11">
+              <div class="checkbox-container">
+                <input type="checkbox" id="checkbox01-11"></div>
+                <p style="margin-top: -1%; text-align: center;">VIAGEM <br> 11</p>
+            </label>
+                  
+            </div>
+          
+          </div>
+          
+      </div>
+
+      <button class="continuar-button">Continuar</button>
+
+      
+      
+</body>
+</html>

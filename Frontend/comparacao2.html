@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/comparacao2.css">
+    <title>Comparação</title>
+</head>
+<body>
+    <div class="left-arroy">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" color= "#05b5df" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>
+        </button>
+    </div>
+
+    <div class="main-title">
+          <div class="info-button" >
+            <div class="info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#B6A611" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                  <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                </svg>
+                </div>
+          <div class="info-tooltip" id="info-tooltip-id">
+                <p>Comparação é uma ferramenta poderosa para visualizar os dados do projeto. <br>
+                  Basta selecionar as viagens e os parâmetros que você deseja que o sistema <br>irá criar
+                  uma tabela personalizada para facilitar a comparação dos valores.
+                </p>
+            </div>
+        </div>
+          <h3 class="favorite-title mx-3">COMPARAÇÃO</h3>
+    </div>
+
+    <div class="container">
+        <p>Você deseja comparar:</p>
+        <form>
+            <label>
+                <input type="radio" name="radio" checked="">
+                <span>Choque tipo 1</span>
+            </label>
+            <label>
+                <input type="radio" name="radio">
+                <span>Choque tipo 2</span>
+            </label>
+            <label>
+                <input type="radio" name="radio">
+                <span>Pico</span>
+            </label>
+        </form>
+    </div>
+
+    <div class="mapa grid-mapa">
+        <div class="parametros grid-filho">
+            <p>Selecione os parâmetro desejados:</p>
+            <div class="eixos grid-container">
+                <div class="eixox grid-item">
+                    <p>Eixo x: </p>
+                    <div class="radio-container">
+                        <div class="radio-wrapper">
+                          <label class="radio-button">
+                            <input type="radio" name="radio-group" id="option1">
+                            <span class="radio-checkmark"></span>
+                            <span class="radio-label">Força</span>
+                          </label>
+                        </div>
+                      
+                        <div class="radio-wrapper">
+                          <label class="radio-button">
+                            <input type="radio" name="radio-group" id="option2">
+                            <span class="radio-checkmark"></span>
+                            <span class="radio-label">Tempo</span>
+                          </label>
+                        </div>
+                      
+                        <div class="radio-wrapper">
+                          <label class="radio-button">
+                            <input type="radio" name="radio-group" id="option3">
+                            <span class="radio-checkmark"></span>
+                            <span class="radio-label">Longetude</span>
+                          </label>
+                        </div>
+    
+                        <div class="radio-wrapper">
+                            <label class="radio-button">
+                              <input type="radio" name="radio-group" id="option4">
+                              <span class="radio-checkmark"></span>
+                              <span class="radio-label">Latitude</span>
+                            </label>
+                          </div>
+                      </div>                  
+                </div>
+                <div class="eixoy grid-item">
+                    <p>Eixo y: </p>
+                    <div class="radio-container2">
+                        <div class="radio-wrapper2">
+                          <label class="radio-button2">
+                            <input type="radio" name="radio-group2" id="option2-1">
+                            <span class="radio-checkmark2"></span>
+                            <span class="radio-label2">Força</span>
+                          </label>
+                        </div>
+                      
+                        <div class="radio-wrapper2">
+                          <label class="radio-button2">
+                            <input type="radio" name="radio-group2" id="option2-2">
+                            <span class="radio-checkmark2"></span>
+                            <span class="radio-label2">Tempo</span>
+                          </label>
+                        </div>
+                      
+                        <div class="radio-wrapper2">
+                          <label class="radio-button2">
+                            <input type="radio" name="radio-group2" id="option2-3">
+                            <span class="radio-checkmark2"></span>
+                            <span class="radio-label2">Longetude</span>
+                          </label>
+                        </div>
+    
+                        <div class="radio-wrapper2">
+                            <label class="radio-button2">
+                              <input type="radio" name="radio-group2" id="option2-4">
+                              <span class="radio-checkmark2"></span>
+                              <span class="radio-label2">Latidude</span>
+                            </label>
+                          </div>
+                      </div>                  
+                </div>
+            </div>
+                
+        </div>
+        <div class="grafico grid-filho">
+            <p>Resultado:</p>
+            <!-- Colocar o gráfico a seguir: -->
+            <div class="grafico-personalizado"></div>
+        </div>
+    </div>
+</body>
+</html>

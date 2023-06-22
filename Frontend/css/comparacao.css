@@ -1,0 +1,192 @@
+
+.left-arroy button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.left-arroy {
+    padding-left: 5%;
+    padding-top: 15px;
+}
+
+.info-button {
+    color: #737373;
+}
+
+.info-tooltip {
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0;
+    width: max-content;
+  }
+
+
+#info-tooltip-id {
+  z-index: 9999;
+}
+
+.info-tooltip p {
+    font-family: Inter;
+    font-size: 15px;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.main-title .info-button .info-icon {
+    padding-top: 140%;
+    color: #737373;
+}
+
+.info-button:hover {
+    transform: scale(1.00);
+}
+
+.info-button:hover .info-tooltip {
+    display: block;
+}
+
+.favorite-title {
+    color: #737373;
+    font-size: 24px;
+    font-family: Inter;
+    padding-left: 1%;
+}
+
+.main-title {
+  padding-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.viagens {
+    padding-left: 15%;
+}
+
+.viagens p {
+    font-size: 17px;
+    color: #737373;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #737373;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #76d2fc;
+  border: 1.5px solid #76d2fc;
+}
+
+label {
+  display: inline-block;
+  vertical-align: middle;
+  color: #737373;
+  cursor: pointer;
+  position: relative;
+  padding-left: 5px;
+  padding-top: -15px;
+  background-color: #fff;
+}
+
+.viagens-container {
+    margin-left: 2%;
+    margin-top: 1%;
+    display: flex;
+}
+
+.viagem {
+    border: 1.5 solid #737373;
+    border-radius: 10px;
+    width: 90px;
+    height: 80px;
+    margin-left: 20px;
+
+    box-shadow: -3px 2px 4px  rgba(0, 0, 0, 0.25);
+}
+
+.viagem:hover {
+    border: 1px solid #727272;
+    transform: scale(1.05);
+    transition: transform 0.25s ease;
+}
+
+.viagem:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+.continuar-button {
+    width: 95px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 17%;
+    margin-top: 2%;
+    
+
+    background: #15B9BF;
+    border: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+
+    color: #FAFAFA;
+    font-size: 17px;
+
+}
+
+.continuar-button:hover {
+    border: 2px solid #2fa2a5;
+    transform: scale(1.05);
+    transition: transform 0.25s ease;
+}
+
+.continuar-button:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+/* Grid Style */
+
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+}
+
+.grid-item {
+  border: transparent;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (min-width: 501px) and (max-width : 800px){
+    .grid-container {
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width : 900px){
+    .grid-container {
+        grid-template-columns: auto auto auto auto auto;
+    }
+}
+
+

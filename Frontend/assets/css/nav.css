@@ -161,7 +161,7 @@ display: none;
   position: absolute;
   z-index: 1;
   width: 220px;
-  height: 470px;
+  height: 350px;
 }
 
 
@@ -201,12 +201,14 @@ animation-duration: 10s;
   margin-top: 30px;
 }
 
-
+a{
+  color: #031423;
+}
 @keyframes teste {
     0%   {display: block ; width: 0%; height:55px ;position: absolute;}
     25%{display: block ; width: 220px; height:55px ;position: absolute;}
     
-    100%  {display: block ; width: 220px; height:470px ;position: absolute;
+    100%  {display: block ; width: 220px; height:350px ;position: absolute;
     }
    
   }
@@ -307,6 +309,9 @@ body.dark {
 
 .fa-sun {
   color: #fafafa
+}
+.salvos:hover{
+  cursor: pointer;
 }
 
 

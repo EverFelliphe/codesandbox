@@ -1,25 +1,26 @@
 
-const Login = require('../models/login')
+const Login = require('../models/Login')
 //classe que controla as ações do login
 class LoginController{
     //verifica se o login recebido é valido ou não
      async login(req,res){
      res.header("Access-Control-Allow-Origin", "*");
-     var user = req.body.usuario;
+     var userf = req.body.usuario;
      var password = parseInt(req.body.senha);
-     console.log(typeof(user),typeof(password))
-     const data =  await Login.verify(user)
-     
-     if(data.length===0){ 
+     console.log(typeof(userf),typeof(password))
+     const data =  await Login.verify(userf)
+     console.log(password)
+     if(data.length===0){  // se não houver usuario
         console.log('entrou')
-        return res.json({
+        return res.json({ // retorna um erro
         msg:'usuario não existe'
      })}
-        const {usuario,senha}=data[0]
-        if(usuario !== user) return res.json({
+        const {user,senha}=data[0]
+        console.log(user)
+        if(user !== userf) return res.json({ // se o usuario for diferente do usuario recebido
             msg:'usuario incorreto ou senha incorretos'
-        })
-        if(senha !== password) return res.json({
+        }) 
+        if(Number(senha) !== password) return res.json({ // se a senha for diferente da senha recebida
             msg:'usuario incorreto ou senha incorretos'
         })
         res.json({

@@ -13,76 +13,114 @@
         
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+   <script>
+  
+   </script>
+   <style>.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto ;
+    padding: 10px;
+    background-color: transparent;
+    display: grid;
+  }
+  
+  .grid-item {
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }</style>
+  </head>
+
     <body>
+      <input  type="hidden" value="" class="viagem-atual" id="viagematual" onchange="console.log('mudou')"/>
+
       <nav class="navbar">
-        <div class="container ms-4 w-25 teste ">
-           <a href="#" class="navbar-brand ">
-            <img class="logo  " src="./Referências/ipt_logo.svg" alt="Logo do IPT" width="80" height="68" style="margin-top: -20px;">
-           </a>
-           </div>
-           <div id="menuToggle" class="buton w-25" >
-            <input id="checkbox" type="checkbox" >    
-            <label class="toggle" for="checkbox">
-              <div class="bar bar--top"></div>
-              <div class="bar bar--middle"></div>
-              <div class="bar bar--bottom"></div>
-            </label>
-          </div>
-          <div class="container barra bar-close">
-            
-            <ul class="content content-close">
-              <li>
-                <div>
-                  <input type="checkbox" class="checkbox" id="chk"/>
-                  <label class="label" for="chk">
-                      <i class="fas fa-moon"></i>
-                      <i class="fas fa-sun"></i>
-                      <div class="ball"></div>
-                  </label>
+        <div class="container ms-4 w-25 teste">
+          <a href="#" class="navbar-brand">
+            <img class="logo" src="./Referências/ipt_logo.svg" alt="Logo do IPT" width="80" height="68"
+              style="margin-top: -20px;">
+          </a>
+        </div>
+        <div id="menuToggle" class="buton w-25">
+          <input id="checkbox" type="checkbox">
+          <label class="toggle" for="checkbox">
+            <div class="bar bar--top"></div>
+            <div class="bar bar--middle"></div>
+            <div class="bar bar--bottom"></div>
+          </label>
+        </div>
+        <div class="container barra bar-close">
+    
+          <ul class="content content-close">
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-kanban-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+              </svg>
+              <a href="/pagina_inicial.html?user_id=3" class="nav-link ibm ms-1 pag-inicial"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">MEUS PROJETOS</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill"
+                viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              </svg>
+              <a href="/perfil2.html?user_id=3" class="nav-link ibm ms-1 pag-perfil"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">MEU PERFIL</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-diagram-2-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-3 8A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1z" />
+              </svg>
+              <a href="#" class="nav-link ibm pag-comp" style="font-size: 18px; font-weight: 200; fill: currentColor;">COMPARAR</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+              </svg>
+              <a href="/salvos1.html" class="nav-link ibm ms-1 pag-salvos"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">FAVORITOS</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
+              <a href="#" class="nav-link ibm ms-1 pag-ajuda"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">SUPORTE</a>
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
               </div>
               <script src="./assets/js/script.js"></script>
               <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
             </li>
-              <li class="nav-item">
-                <a href="/pagina_inicial.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">MEUS PROJETOS</a>
-            </li>
-            <li class="nav-item">
-              <a href="/perfil2.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">MEU PERFIL</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">COMPARAR</a>
-            </li>
-            <li class="nav-item">
-                <a href="/salvos1.html" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">FAVORITOS</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">SUPORTE</a>
-            </li>
-            <li class="nav-item">
-              <a href="/projeto.html?id_relatorio=1" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">PROJETO ATUAL</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">ESCRITÓRIO DE DADOS</a>
-            </li>
-            <li class="nav-item">
-              <a href="/relatorio-pdf.html?user_id=3" class="nav-link ibm" style="font-size: 18px; font-weight: 200; color: rgb(255, 255, 255);">RELATÓRIOS</a>
-            </li>
-  
-  
-  
-  
-  
-  
-  
-            </ul>
-           </div>
-      </nav>  
+          </ul>
+        </div>
+      </nav>
   <section class="p-5 text-center d-md-flex text-center text-sm-start ">
     <div class="container h-25 w-75" style="margin-top: 0px;">
         <div class="d-sm-flex align-items-center " >
-                <button class="btn  rounded-5 mx-3  "style="margin-top: -25px; background-color: #15B9BF; color:white; border: 0.5px solid black"  type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+          <a href="#" class="back">  <button class="btn  rounded-5 mx-3  "style="margin-top: -25px; background-color: #15B9BF; color:white; border: 0.5px solid black"  type="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                  </svg></button>
+                  </svg>
+                </button></a>
+              
                 <h1 style="margin-top: -25px;" >Meu Projeto </h1>
 
                 
@@ -93,8 +131,12 @@
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
             <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
           </svg>
-        <p>Nome da viagem </p>
+        <p class="nome-viagem">Nome da viagem </p>
+        
+        
     </div>
+    <br>
+    <p style="margin-left: 20px;">Clique 2 vezes sobre o mapa para amplia-lo</p>
     </div>
      <section class="p-1 " >
     
@@ -103,25 +145,25 @@
 
                 <div class="input-group  mx-1 w-100 newinput">
                     <div class="dropdown">
-                        <a id="teste"class="btn btn-light border-black rounded-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 0;">
-                          Vagão
+                        <a id="teste"class="btn btn-light border-black f rounded-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="z-index: 0;">
+                          Viagens
                         </a>
                       
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">3</a></li>
-                          <li><a class="dropdown-item" href="#">2</a></li>
-                          <li><a class="dropdown-item" href="#">1</a></li>
+                        <ul class="dropdown-menu viagem">
+                          
                         </ul>
                       </div>
                   </div>
                   <div class="dropdown">
-                    <a class="btn btn-light border-black rounded-0 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="btn btn-light border-black rounded-5 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Engate
                     </a>
                   
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">F</a></li>
-                      <li><a class="dropdown-item" href="#">E</a></li>
+                    <ul class="dropdown-menu ">
+                      <li  class="dropdown-item engate engate-all" >Todos</li>
+
+                      <li class="dropdown-item engate engate-F">F</li>
+                      <li class="dropdown-item engate engate-E">E</li>
                     </ul>
                   </div>
               </div>
@@ -129,25 +171,30 @@
 
             
             
-        
   </section>
   </section>
  <section class="my-2 p-2">
    <div class="container w-100  ">
     <div class="row justify-content-center align-items-center   " style="margin-top: -4px; margin-left: -5%;" >
         <div class=" col-1 d-flex align-items-center justify-content-end" style="height:400px;">
-            <button class="btn  border border-black  shadow  btn-danger rounded-5 " type="button"style="background-color: #15B9BF;"><</button>
+          
+            <button class="btn  border border-black  shadow  btn-danger rounded-5 ant " type="button"style="background-color: #15B9BF;"><</button>
 
         </div>
        <div class=" col-sm-10 col-md-6" style="height: 400px;">
         <div id="map1" style="height: 400px; width: 100% ; border-radius: 14px; border: 2px solid #595959 ;"></div>
       </div>
-       <div class=" col-1 d-flex align-items-center justify-content-start" style="height: 300px;"> <button class="btn btn-danger border border-black  shadow  rounded-5" type="button"style="background-color: #15B9BF;">></button></div>
+      <div class="salvos" style="right: 530px; position:absolute ; bottom: -180px; ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16" style="right:550px; position:absolute ; bottom:10px; ">
+          <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
+        </svg>
+       
+      </div>
+       <div class=" col-1 d-flex align-items-center  justify-content-start" style="height: 300px;"> <button class="btn btn-danger border border-black  shadow  rounded-5 prox" type="button"style="background-color: #15B9BF;">></button></div>
        <div class=" col-sm-8 col-md-4 d-flex align-items-center flex-column justify-content-evenly" style="height: 300px;">
-        <h3 class=" text-body-tertiary">Vizualize Por:</h3>
+        <h3 class=" text-body-tertiary">Visualize pelo:</h3>
         <button type="button"  class="btn c c-1 btn-light border border-black  shadow  rounded-5 btn-lg w-50">Choque Tipo 1</button>
         <button type="button" class="btn c c-2 btn-light border border-black  shadow  rounded-5 btn-lg w-50">Choque Tipo 2</button>
-        <button type="button" class="btn c c-p btn-light border border-black  shadow  rounded-5 btn-lg w-50">Picos</button>
     <button type="button" class="btn  btn-light  rounded-5 btn-lg w-50 " >Comparar</button>
     </div>
    </div>
@@ -161,12 +208,21 @@
 
     <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close" style="width: 5%; z-index: 2;position: absolute;top: 10px;right: 5px;"></button>
 
-          <div id="map2" style="height: 100%; width: 100% ; border-radius: 6px;"></div>
+          
+          <div class="row justify-content-center align-items-center   " style="width:800px;" >
+            <div class=" col-1 d-flex align-items-center justify-content-end" style="height:400px;width: 10px;position: absolute; left: -20px;">
+          
+              <button class="btn  border border-black  shadow  btn-danger rounded-5 ant " type="button"style="background-color: #15B9BF;"><</button>
+  
+          </div>
+         <div class=" col-sm-10 col-md-12" style="height: 550px;">
+          <div id="map2" style="height: 100%; width: 800px ; border-radius: 6px;"></div>
+        </div>
+         <div class=" col-1 d-flex align-items-center  justify-content-start" style="height: 400px;width: 10px;position: absolute; right: -20px;"> <button class="btn btn-danger border border-black  shadow  rounded-5 prox" type="button"style="background-color: #15B9BF;">></button></div>
+         </div>
       
     
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-bookmark" viewBox="0 0 16 16" style="right:25px; position:absolute ; bottom:-55px">
-        <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-      </svg>
+      
     
         
       
@@ -179,14 +235,31 @@
     
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalToggleLabel"></h1>
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Informações do Choque</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body " style="height: 300px;">
-        graficos aqui
+      <div class="modal-body  dadosmodal" >
+        
       </div>
-      <div class="modal-footer">
-        <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+      <div class="modal-footer dadosmodal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="salvar" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-md modal-dialog-centered">
+    
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Selecione a pasta para salvar</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body salvar-pastas " style="height: 300px;">
+       
+        
+        <button >Salvar</button>
+      </div>
+      <div class="modal-footer salvar-footer">
       </div>
     </div>
   </div>
@@ -196,199 +269,9 @@
       <script 
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEtBSjfXHef8arqVHfk1r7d8xFVylp7qg&callback=initMap" async defer>
   </script>
-  <script>
-   let obj_dados = []
-   let markers = [];
-   let markers2 = [];
-
-    const myModalAlternative = new bootstrap.Modal('#mapafull')
-    const myModalAlternative2 = new bootstrap.Modal('#222')
+  <script src="./assets/js/projeto.js">
     
-    $('.c').click(function(){ 
-      if($('body').hasClass('dark')){
-        $('.c').css({"background-color":"#031423","color":"white"})
-      this.style.backgroundColor = "#02d8da"
-      this.style.color = "black"
-     console.log(this.style.backgroundColor)
-     console.log(this)
-
-      }else{
-        $('.c').css({"background-color":"white","color":"black"})
-      this.style.backgroundColor = "#15B9BF"
-      this.style.color = "black"
-     console.log(this.style.backgroundColor)
-     console.log(this)
-      }
-      
-     if(this.classList.contains('c-1')){
-          obj_dados =[]  
-          deleteMarkers()
-
-          fetch('/choque1?id_vagao=2&tipo=1',{
-            method:'GET'
-            
-          }).then(resp => resp.json()).then(resp => {
-            resp.forEach(val=>{
-              obj_dados.push({lat:val.Latitude,lng:val.Longitude,id_choque:val.id})
-            })
-
-            setMarkers(map1, obj_dados,markers);
-            setMarkers(map2,obj_dados,markers2);  
-            
-          })
-    }
-    if(this.classList.contains('c-2')){
-          obj_dados =[]            
-          deleteMarkers()
-
-          fetch('/choque2?id_vagao=2&tipo=2',{
-            method:'GET'
-            
-          }).then(resp => resp.json()).then(resp => {
-            resp.forEach(val=>{
-              obj_dados.push({lat:val.Latitude,lng:val.Longitude,id_choque:val.id})
-            })
-            setMarkers(map1, obj_dados,markers);
-            setMarkers(map2,obj_dados,markers2); 
-
-          })
-    }
-    if(this.classList.contains('c-p')){
-      obj_dados=[]
-        deleteMarkers()
-          fetch('/pico?id_vagao=2',{
-            method:'GET'
-            
-          }).then(resp => resp.json()).then(resp => {      
-            
-
-            resp.forEach(val=>{
-              
-              obj_dados.push({lat:val.Latitude,lng:val.Longitude,id_choque:'pico'})
-            }) 
-           
-            setMarkers(map1, obj_dados,markers);
-            setMarkers(map2,obj_dados,markers2);  
-
-            
-
-            window.initMap = initMap
-          })
-    }
-  })
-    $('#map1').dblclick(function(){
-      console.log(this)
-      myModalAlternative.show()
-    }) 
-    $('.bar').change(function(){
-      alert('mudouuuuu')
-    })
-  let map;
-
-  function initMap() {
-
-    map1 = new google.maps.Map(document.getElementById("map1"), {
-
-      center: { lat: -4.40454854, lng: -42.3425765 },      zoom: 5,
-    });
-    
-    map2 = new google.maps.Map(document.getElementById("map2"), {
-      center: { lat: -4.40454854, lng: -42.3425765 },      zoom: 5,
-      fullscreenControl:false
-    });
-
-    const flightPlanCoordinates = [
-      { lat: -33.80010128657071, lng: 151.28747820854187 ,id:1},
-      { lat: -33.890542, lng: 151.274856 },
-    { lat: -33.923036, lng: 151.259052 },
-   
-   
-    { lat: -34.028249, lng:151.157507 },
-    
-  ];
-
-  
-
-  
-  }
-  function setPoly(obj,map){  
-    
-    const flightPath = new google.maps.Polyline({
-    path: obj,
-    geodesic: true,
-    strokeColor: "#FF0000",
-    strokeOpacity: 1.0,
-    strokeWeight: 1,
-   
-    })
-      flightPath.setMap(map);
-    }
-function setMarkers(map,array,pontos) {
-
-  const image = {
-    url: "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png",
-    // This marker is 20 pixels wide by 32 pixels high.
-    size: new google.maps.Size(20, 32),
-    // The origin for this image is (0, 0).
-    origin: new google.maps.Point(0, 0),
-    // The anchor for this image is the base of the flagpole at (0, 32).
-    anchor: new google.maps.Point(0, 32),
-  };
-
-  const shape = {
-    coords: [1, 1, 1, 20, 18, 20, 18, 1],
-    type: "poly",
-  };
- 
-  for (let i = 0; i < 10; i++) {
-    const beach = array[i];
-    let marker = new google.maps.Marker({
-      position: { lat: beach.lat, lng: beach.lng },
-      map,
-      icon: image,
-      shape: shape,
-      title:`${beach.id_choque}` ,
-      
-    });
-    pontos.push(marker)
-    const infowindow = new google.maps.InfoWindow({
-    content: `id do choque:${beach.id_choque}`,
-    ariaLabel: "Uluru",
-  });
-    marker.addListener("click", () => {
-      myModalAlternative2.show()
-
-  });
-  }
-  console.log(markers)
-}
-
-    // Removes the markers from the map, but keeps them in the array.
-// Sets the map on all markers in the array.
-function setMapOnAll(map) {
-  for (let i = 0; i < markers.length; i++) {
-    markers[i].setMap(map);
-    markers2[i].setMap(map);
-    console.log(i,'none')
-
-  }
-  console.log(markers)
-}
-
-// Removes the markers from the map, but keeps them in the array.
-function hideMarkers() {
-  setMapOnAll(null);
-}
-
-
-// Deletes all markers in the array by removing references to them.
-function deleteMarkers() {
-  hideMarkers();
-  markers = [];
-  
-}
-  flightPath.setMap(map1);
-  window.initMap = initMap;</script>
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 

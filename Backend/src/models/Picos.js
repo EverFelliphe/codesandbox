@@ -3,8 +3,8 @@ const sqlite3 = require('sqlite3').verbose()
 var DBPATH = resolve(__dirname,'..','database','banco_de_dados_ipt_grupo02.db');
 //classe que se comunica com o banco de dados a tabela picos
 
-class Picos{
-     findPicos(id_vagao){
+class Picos{ // classe que se comunica com o banco de dados da tabela picos
+     findPicos(id_vagao){ // mostra os picos de um vagão
         return new Promise((resolve,reject)=>{
     
             var sql = `SELECT * FROM pico  WHERE id_vagao=${id_vagao}  `
@@ -24,7 +24,7 @@ class Picos{
         )
         
 }
-    CreatePicos(tipo,id_vagao,obj){
+    CreatePicos(tipo,id_vagao,obj){ // cria os picos de um vagão
         
         return new Promise((resolve,reject)=>{
             
@@ -39,7 +39,7 @@ class Picos{
                 keys.push(value)
             }) 
             }
-            obj.forEach((value,index)=>{
+            obj.forEach((value,index)=>{ // percorre o array de objetos
                              
                         if(index === obj.length-1){  
                             var db = new sqlite3.Database(DBPATH);
@@ -67,7 +67,7 @@ class Picos{
                                          db.close()
                                     
                                    
-                            })}else{
+                            })}else{ // se não for o ultimo objeto
                                 var db = new sqlite3.Database(DBPATH);
                                 let values = Object.values(value).map(value =>{
                                   return value.toString().replace(',','.')

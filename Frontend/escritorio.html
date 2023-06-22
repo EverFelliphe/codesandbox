@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Escritório de Dados</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/escr.css">
+    <link rel="stylesheet" href="./assets/css/nav.css">
+
+
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container ms-4 w-25 teste">
+          <a href="#" class="navbar-brand">
+            <img class="logo" src="./Referências/ipt_logo.svg" alt="Logo do IPT" width="80" height="68"
+              style="margin-top: -20px;">
+          </a>
+        </div>
+        <div id="menuToggle" class="buton w-25">
+          <input id="checkbox" type="checkbox">
+          <label class="toggle" for="checkbox">
+            <div class="bar bar--top"></div>
+            <div class="bar bar--middle"></div>
+            <div class="bar bar--bottom"></div>
+          </label>
+        </div>
+        <div class="container barra bar-close">
+    
+          <ul class="content content-close">
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-kanban-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2.5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-11zm5 2h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1zm-5 1a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3zm9-1h1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z" />
+              </svg>
+              <a href="/pagina_inicial.html?user_id=3" class="nav-link ibm ms-1 pag-inicial"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">MEUS PROJETOS</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-fill"
+                viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+              </svg>
+              <a href="/perfil2.html?user_id=3" class="nav-link ibm ms-1 pag-perfil"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">MEU PERFIL</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-diagram-2-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H11a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 5 7h2.5V6A1.5 1.5 0 0 1 6 4.5v-1zm-3 8A1.5 1.5 0 0 1 4.5 10h1A1.5 1.5 0 0 1 7 11.5v1A1.5 1.5 0 0 1 5.5 14h-1A1.5 1.5 0 0 1 3 12.5v-1zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1A1.5 1.5 0 0 1 9 12.5v-1z" />
+              </svg>
+              <a href="#" class="nav-link ibm pag-comp" style="font-size: 18px; font-weight: 200; fill: currentColor;">COMPARAR</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bookmark-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z" />
+              </svg>
+              <a href="/salvos1.html" class="nav-link ibm ms-1 pag-salvos"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">FAVORITOS</a>
+            </li>
+            <li class="nav-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+              </svg>
+              <a href="#" class="nav-link ibm ms-1 pag-ajuda"
+                style="font-size: 18px; font-weight: 200; fill: currentColor;">SUPORTE</a>
+            </li>
+            <li>
+              <div>
+                <input type="checkbox" class="checkbox" id="chk" />
+                <label class="label" for="chk">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+              </div>
+              <script src="./assets/js/script.js"></script>
+              <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="d-flex align-items-center">
+        <div class="left-arroy">
+          <a href="#" class="voltar">
+            <button >
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" color="#15B9BF" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+            </svg>
+          </button>
+          </a>
+          
+        </div>
+        <h1 class="ms-2 text-arow "style="font-family: 'Inter', sans-serif">NOME DO PROJETO</h1>
+      </div>
+    </div>
+    <div class="container justify-content-center align-items-center text-center mb-4">
+      <h4 class="text-center mt-5" style="font-family: 'Inter', sans-serif">Escritório de dados</h4>
+
+    </div>
+    <div class="container ">
+      <div class="row">
+        <div class="col-md-4">
+       
+        <h6 class="mt-4 ml-3" style="font-family: 'Inter', sans-serif">Que dados você procura?</h6>
+        <br>
+        <div class="d-flex justify-content-left mb-4 align-items-center">
+                <div class="form-outline me-3 mt-2" >
+                <h6 style="color: #595959;">Ocorrências</h6>
+                </div class="cstm-btns-1">
+            <button type="button" class="btn text-center cst-btn-1" id="btnplus" style="color: #595959; border-color: transparent;
+            background-color: transparent;">+</button>
+            <button type="button" class="btn text-center cst-btn-1-1" id="btnplus" style="color: #595959; display: none; border-color: transparent;
+            background-color: transparent;">-</button>
+        </div>
+        <div class="container choq-tip-1" style="display: none;">
+          <div class="row">
+            <div>
+              <div class="input-group">
+                <div class="input-group-text">
+                  <input type="checkbox" class="form-check-input" name="checkbox-c-1" id="checkbox-c-1">
+                  <label for="checkbox-c-1" class="form-check-label">Choque tipo 1</label>
+                </div>
+                <button class="btn chq-t-1a" type="button" style="color: #595959; border-color: transparent;
+                background-color: transparent;">+</button>
+                <button class="btn chq-t-1f" type="button" style="color: #595959; display: none; border-color: transparent;
+                background-color: transparent;">-</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container cst-range1 mt-3" style="display: none;">
+          <div class="row">
+            <h6 style="color: #595959" class="ml-4">Força:</h6>
+            <div class="col-sm-4">
+              <input type="range" class="form-range custom-range slider" min="-180" max="0" value="-180" id="slider1">
+              <div class="text-left"><label for="slider1" class="form-label sliderValue"> <span id="sliderValue1">-180 </span> TF</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <input type="range" class="form-range custom-range slider" min="0" max="180" value="180" id="slider8">
+              <div class="text-right"><label for="slider1" class="form-label sliderValue"> <span id="sliderValue8">-180 </span> TF</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container choq-tip-2 mt-3" style="display: none;">
+          <div class="row">
+            <div>
+              <div class="input-group">
+                <div class="input-group-text">
+                  <input type="checkbox" class="form-check-input" name="checkbox-c-2" id="checkbox-c-2">
+                  <label for="checkbox-c-2" class="form-check-label text-right" >Choque tipo 2</label>
+                </div>
+                <button class="btn chq-t-2a" type="button" style="color: #595959; border-color: transparent;
+                background-color: transparent;">+</button>
+                <button class="btn chq-t-2f" type="button" style="color: #595959; display: none; border-color: transparent;
+                background-color: transparent;">-</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container cst-range2 mt-3" style="display: none;">
+          <div class="row">
+            <h6 style="color: #595959" class="ml-4">Força:</h6>
+            <div class="col-sm-4">
+              <input type="range" class="form-range custom-range slider" min="-180" max="0" value="-180" id="slider3">
+              <div class="text-left">
+                <label for="slider1" class="form-label sliderValue"><span id="sliderValue3">-180 </span> TF</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <input type="range" class="form-range custom-range slider" min="0" max="180" value="180" id="slider10">
+              <div class="text-left">
+                <label for="slider1" class="form-label sliderValue"><span id="sliderValue10">180 </span> TF</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container p-c mt-3 align-items-center " style="display: none">
+          <div class="row">
+            <div>
+              <div class="input-group">
+                <div class="input-group-text ">
+                  <input type="checkbox" class="form-check-input" name="checkbox-pc" id="checkbox-pc" style="margin-right: 6px;">
+                  <label for="checkbox-p-c" class="form-check-label text-right" >Pico</label>
+                </div>
+                <button class="btn cst-btn-3" type="button" style="color: #595959; border-color: transparent;
+                background-color: transparent;">+</button>
+                <button class="btn cst-btn-3-2" type="button" style="color: #595959; display: none; border-color: transparent;
+                background-color: transparent;">-</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container cst-range4 mt-3" style="display: none;">
+          <div class="row">
+            <h6 style="color: #595959" class="ml-4">Força de engate:</h6>
+            <div class="col-sm-4">
+              <input type="range" class="form-range custom-range slider" min="-180" max="0" value="-180" id="slider7">
+              <div class="text-left">
+                <label for="slider1" class="form-label sliderValue"><span id="sliderValue7">-180 </span> TF</label>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <input type="range" class="form-range custom-range slider" min="0" max="180" value="180" id="slider14">
+              <div class="text-right">
+                <label for="slider1" class="form-label sliderValue"><span id="sliderValue14">180 </span> TF</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-left mb-4 align-items-center mt-4">
+          <div class="form-outline me-3 mt-2" >
+          <h6 style="color: #595959;">Tipos de Dados</h6>
+          </div>
+      <button type="button" class="btn text-center cst-btn-2" id="btnplus" style="color: #595959; border-color: transparent;
+      background-color: transparent;">+</button>
+      <button type="button" class="btn text-center cst-btn-2-2" id="btnplus" style="color: #595959; display: none; border-color: transparent;
+      background-color: transparent;">-</button>
+        </div>
+        <div class="container histograma" style="display: none;">
+          <div class="row">
+            <div>
+              <div class="input-group">
+                <div class="input-group-text">
+                  <input type="checkbox" class="form-check-input" name="opcao" id="checkbox-histograma" onchange="checkboxExclusivo(this)">
+                  <label for="checkbox-histograma" class="form-check-label"> Histograma</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container grafico mt-2" style="display: none;">
+          <div class="row">
+            <div>
+              <div class="input-group">
+                <div class="input-group-text">
+                  <input type="checkbox" class="form-check-input" name="opcao" id="checkbox-grafico" onchange="checkboxExclusivo(this)" checked>
+                  <label for="checkbox-grafico" class="form-check-label"> Gráfico</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+       </div>
+       <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <div class="mt-4" id="resultados-container">
+
+        </div>
+      </div>
+      
+        <div class="col-md-4">
+
+       </div>
+       </div> 
+       </div>
+      
+
+          
+        
+    </div>
+
+    
+
+
+    
+                    
+
+
+    <script>
+    const sliders = document.querySelectorAll('.slider'); // Seleciona todos os sliders
+
+sliders.forEach((slider) => {
+  const sliderValue = document.getElementById(`sliderValue${slider.id.match(/\d+$/)[0]}`); // Seleciona o elemento que mostra o valor do slider
+
+  slider.addEventListener('input', function() {
+    const value = slider.value; // Pega o valor do slider
+    sliderValue.textContent = value; // Atualiza o valor do elemento que mostra o valor do slider
+  });
+});
+
+function checkboxExclusivo(checkbox) {
+      var checkboxes = document.getElementsByName('opcao');
+
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i] !== checkbox) {
+          checkboxes[i].checked = false;
+        }
+      }
+    }
+
+    </script>
+    
+    <script src="https://kit.fontawesome.com/4a5eb6d700.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./assets/js/escritorio_dados.js"></script>
+    <script src="./assets/js/navbar.js"></script>
+  </body>
+</html>

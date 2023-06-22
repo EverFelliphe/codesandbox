@@ -9,14 +9,14 @@ const upload = multer({ fileFilter:(req,file,cb) =>{
   }}).single('file')
   const {tratar_csv} = require('../services/csv')
 
-class PicosController{
+class PicosController{ // classe que controla as ações relacionadas aos picos
     async Show_Pico(req,res){
         
         try{
             res.header("Access-Control-Allow-Origin", "*");
             const{id_vagao} = req.query
             const pico = await Picos.findPicos(id_vagao)
-            if(!pico[0]){
+            if(!pico[0]){ // se não houver picos
                 return res.json({msg:'pico inexistente'})
             }
             return res.json(pico)
@@ -27,7 +27,7 @@ class PicosController{
     
     }
    
-    async create_picos(req,res){
+    async create_picos(req,res){ // cria os picos a partir de um csv enviado na requisição
         upload(req,res,async function (err){
             if(err){
                 return res.status(400).json({

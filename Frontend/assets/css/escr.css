@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --bs-card-spacer-y: 0rem;
+  }
+.left-arroy button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: transparent;
+}
+.left-arroy {
+    padding-left: 5%;
+    padding-top: 15px;
+}
+
+.text-arow {
+    padding-left: 3%;
+    padding-top: 35px;
+}
+
+#btnplus {
+    margin-left: -20px;
+}
+
+#form-oc {
+    width: 30%;
+}
+
+
+
+
+#checkbox-c-1 {
+    margin-top: -1.5px;
+    margin-right: 5px;
+}
+#checkbox-c-2 {
+    margin-top: -1.5px;
+    margin-right: 5px;
+}
+
+#checkbox-histograma {
+    margin-top: -1.5px;
+    margin-right: 5px;
+}
+
+#checkbox-grafico {
+    margin-top: -1.5px;
+    margin-right: 5px;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .hidden-s {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .show {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+ 
+.custom-btnslct {  
+    background-color: #15B9BF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    color: white;
+    width: 220px;
+}
+
+.custom-btnslct:hover {
+    background-color: #159195;
+    color: white;
+}
+
+
+
+.cst-btn-1-1 {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.chq-t-1a {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.chq-t-1f {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.chq-t-2a {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.chq-t-2f {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.p-ca {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.p-cf {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.cst-btn-2 {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.cst-btn-2-2 {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.cst-btn-3 {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.cst-btn-3-2 {
+    border-color: transparent;
+    background-color: transparent;
+
+}
+
+.custom-font {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+h1 {
+    font-family: 'Inter', sans-serif;
+}
+h2 {
+    font-family: 'Inter', sans-serif;
+}
+h3 {
+    font-family: 'Inter', sans-serif;
+}
+h4 {
+    font-family: 'Inter', sans-serif;
+}
+h5 {
+    font-family: 'Inter', sans-serif;
+}
+h6 {
+    font-family: 'Inter', sans-serif;
+}
