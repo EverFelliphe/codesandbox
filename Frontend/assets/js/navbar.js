@@ -1,5 +1,6 @@
 
    $(document).ready(function(){ // Função para executar quando o documento estiver pronto
+            console.log($('.fbkjsdhjosdhsdh')[0])
             $('.prj').tooltip()
             $('.content').attr('class','content content-close')
             $("#checkbox").removeAttr("checked");

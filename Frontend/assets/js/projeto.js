@@ -7,7 +7,7 @@ $(document).ready(function(){
   $('.pag-salvos').attr('href',`/salvos1.html?id_user=${parametro2}`)
   $('.pag-inicial').attr('href',`/pagina_inicial.html?user_id=${parametro2}`)
   $('.pag-ajuda').attr('href',`/pagina_inicial.html?user_id=${parametro2}`)
-  $('.pag-comp').attr('href',`/pagina_inicial.html?user_id=${parametro2}`)
+  $('.pag-comp').attr('href',`/comparacao.html?user_id=${parametro2}`)
   $('.navbar-brand').attr('href',`/pagina_inicial.html?user_id=${parametro2}`)
   $('.back').attr('href',`/pagina_inicial.html?user_id=${parametro2}`)
   $('.nome-viagem').html(`Viagem ${viagem_atual}`)

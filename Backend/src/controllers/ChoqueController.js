@@ -82,6 +82,30 @@ class ChoquesController{ //classe que controla as ações relacionadas aos choqu
        
 
     }
+    async filtrarChoque(req,res){
+        res.setHeader('Access-Control-Allow-Origin', '*');
+    console.log(req.query)
+    const column = req.query.column
+    const filtro = req.query.filtro
+    const id_vagao=req.query.viagem
+    const tipo = req.query.tipo
+    let filtrado = await Choque.filtrar(id_vagao,tipo,column,filtro)
+    res.json(filtrado)
+    }
+    async rangedChoque1(req,res){
+        res.statusCode = 200;
+    console.log(req.query)
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    let f1 = await Choque.rangeChoque1(req.query.sliderF1,req.query.sliderF2,req.query.id_viagem)
+    res.json(f1)
+    }
+    async rangedChoque2(req,res){
+        res.statusCode = 200;
+        console.log(req.query)
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        let f2 = await Choque.rangeChoque2(req.query.sliderF11,req.query.sliderF22,req.query.id_viagem)
+        res.json(f2)
+    }
     async update_choque(req,res){
 
 }

@@ -4,6 +4,19 @@ var DBPATH = resolve(__dirname,'..','database','BANCO DE DADOS ATUALIZADO.db');
 //classe que se comunica com o banco de dados d tabela choque
 
 class Choque{ // classe que se comunica com o banco de dados da tabela choque
+    filtrar(id_vagao,tipo,column,filtro){
+        return new Promise((resolve,reject)=>{
+            var db = new sqlite3.Database(DBPATH);
+    var sql = `SELECT * FROM choques WHERE id_viagem=${id_vagao} and tipo =${tipo} and ${column}="${filtro}" order by Data_Hora Asc`
+    db.all(sql, [], (err, rows) => {
+        if (err) {
+            throw err;
+        }
+        resolve(rows)
+    });
+    db.close();
+        })
+    }
     cria_tabela(atributos){ // cria a tabela choque
         return new Promise((resolve,reject)=>{
     
@@ -24,6 +37,34 @@ class Choque{ // classe que se comunica com o banco de dados da tabela choque
         )
         
 };
+    rangeChoque1(sliderF1,sliderF2,id_viagem){
+        return new Promise((resolve,reject)=>{
+            var db = new sqlite3.Database(DBPATH);
+    var sql = `SELECT F_max, id_viagem, Data_Hora, Velocidade, tipo FROM choques WHERE F_max BETWEEN ${sliderF1} AND ${sliderF2} AND tipo = 1 AND id_viagem=${id_viagem}`;
+    db.all(sql, [], (err, rows) => {
+        if (err) {
+            throw err;
+        } else { 
+            resolve(rows)
+        } 
+    });
+    db.close();
+        })
+    }
+    rangeChoque2(sliderF1,sliderF2,id_viagem){
+        return new Promise((resolve,reject)=>{
+            var db = new sqlite3.Database(DBPATH);
+    var sql = `SELECT F_max, id_viagem, Data_Hora, Velocidade, tipo FROM choques WHERE F_max BETWEEN ${sliderF1} AND ${sliderF2} AND tipo = 2 AND id_viagem=${id_viagem}`;
+    db.all(sql, [], (err, rows) => {
+        if (err) {
+            throw err;
+        } else { 
+            resolve(rows)
+        } 
+    });
+    db.close();
+        })
+    }
      findChoques(tipo,id_vagao){ // mostra os choques de um vagão e de um tipo
         return new Promise((resolve,reject)=>{
             console.log(tipo,id_vagao)
